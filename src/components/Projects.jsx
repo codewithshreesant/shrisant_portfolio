@@ -21,7 +21,7 @@ const Projects = () => {
             name: 'Blog Application',
             description: 'This is a full-stack blog web application built using the MERN (MongoDB, Express.js, React.js, Node.js) stack. Users can browse blog posts, read individual articles, and leave comments. The application also features a recommendation system for related blogs on single blog pages, user authentication (login/signup), essential pages (Home, Blog listing, Contact), and a secure admin panel for content management.',
             imageSrc: 'images/project3.jpg',
-            liveLink: '#',
+            liveLink: 'https://shrisant-academy.vercel.app/',
             repoLink: 'https://github.com/codewithshreesant/Blog-Application',
         },
         // Add more projects as needed
