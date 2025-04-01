@@ -86,7 +86,7 @@ function Contact() {
             </div>
             <button
               type="submit"
-              className="bg-accent hover:bg-accent-dark text-accent-content font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+              className="bg-accent hover:bg-accent-dark text-accent-content font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline bg-purple-600 text-white"
             >
               Send Message
             </button>
