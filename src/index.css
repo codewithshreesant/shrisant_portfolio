@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+/* src/index.css (or theme.css) */
+
+/* Light theme (default styles) */
+body {
+    --bg-primary: #f3f4f6; /* gray-100 */
+    --text-primary: #1f2937; /* gray-800 */
+    --bg-secondary: #ffffff; /* white */
+    --text-secondary: #374151; /* gray-700 */
+    --bg-accent: #4b5563; /* gray-600 */
+    --text-accent: #ffffff; /* white */
+    /* Add more light theme variables as needed */
+  }
+  
+  /* Dark theme styles using data attribute */
+  [data-theme="dark"] {
+    --bg-primary: #111827; /* gray-900 */
+    --text-primary: #f9fafb; /* gray-100 */
+    --bg-secondary: #1f2937; /* gray-800 */
+    --text-secondary: #d1d5db; /* gray-300 */
+    --bg-accent: #6b7280; /* gray-500 */
+    --text-accent: #f9fafb; /* white */
+    /* Add more dark theme variables as needed */
+  }
+  
+  /* Apply these variables in your CSS or Tailwind's @apply directives */
+  body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .bg-secondary-theme {
+    background-color: var(--bg-secondary);
+  }
+  
+  .text-secondary-theme {
+    color: var(--text-secondary);
+  }
+  
+  .bg-accent-theme {
+    background-color: var(--bg-accent);
+  }
+  
+  .text-accent-theme {
+    color: var(--text-accent);
+  }
+  
+  /* You can still use Tailwind classes alongside these */

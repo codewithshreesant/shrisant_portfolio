@@ -1,0 +1,139 @@
+/* src/App.css */
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fade-in-down {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slide-up {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes slide-right {
+  from { transform: translateX(-20px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes zoom-in {
+  from { transform: scale(0.9); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+.animate-fade-in {
+  animation: fade-in 1s ease-out forwards;
+}
+
+.animate-fade-in-down {
+  animation: fade-in-down 1s ease-out forwards;
+}
+
+.animate-slide-up {
+  animation: slide-up 0.8s ease-out forwards;
+}
+
+.animate-slide-right {
+  animation: slide-right 0.8s ease-out forwards;
+}
+
+.animate-zoom-in {
+  animation: zoom-in 0.6s ease-out forwards;
+}
+
+.animate-bounce {
+  animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+
+/* Light Theme (Default) */
+body {
+  background-color: #f3f4f6; /* gray-100 */
+  color: #1f2937; /* gray-800 */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.bg-light {
+  background-color: #f3f4f6; /* gray-100 */
+}
+
+.text-dark {
+  color: #1f2937; /* gray-800 */
+}
+
+/* Dark Theme */
+body.dark-theme {
+  background-color: #111827; /* gray-900 */
+  color: #f9fafb; /* gray-100 */
+}
+
+.dark-theme .bg-light { /* Target elements with .bg-light inside the dark theme */
+  background-color: #111827; /* gray-900 */
+}
+
+.dark-theme .text-dark { /* Target elements with .text-dark inside the dark theme */
+  color: #f9fafb; /* gray-100 */
+}
+
+/* You'll need to add similar styles for other elements and components */
+.dark-theme #about {
+  background-color: #1f2937; /* gray-800 */
+  color: #d1d5db; /* gray-300 */
+}
+
+.dark-theme #about h2 {
+  color: #f9fafb; /* gray-100 */
+}
+
+.dark-theme #skills {
+  background-color: #111827; /* gray-900 */
+  color: #f9fafb; /* gray-100 */
+}
+
+.dark-theme .bg-white { /* For elements that were white in light mode */
+  background-color: #1f2937; /* Example dark background */
+}
+
+.dark-theme .text-gray-700 {
+  color: #d1d5db; /* Example dark text color */
+}
+
+/* Continue styling other elements as needed for dark mode */
+
+/* Light Theme */
+.bg-secondary {
+  background-color: white;
+}
+
+.text-secondary-content {
+  color: gray;
+}
+
+.text-primary-content {
+  color: black;
+}
+
+/* Dark Theme */
+body.dark-theme .bg-secondary {
+  background-color: #1f2937; /* gray-800 */
+}
+
+body.dark-theme .text-secondary-content {
+  color: #d1d5db; /* gray-300 */
+}
+
+body.dark-theme .text-primary-content {
+  color: white;
+}
