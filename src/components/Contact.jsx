@@ -15,7 +15,7 @@ function Contact() {
     e.preventDefault();
 
     try {
-      const response = await fetch('http://localhost:3000/api/user/contact', {
+      const response = await fetch('https://portfolio-backend-1-u24k.onrender.com/api/user/contact', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
