@@ -7,7 +7,7 @@ const Projects = () => {
             name: 'Video Stream',
             description: 'This is a full-stack video streaming web application built using the MERN (MongoDB, Express.js, React.js, Node.js) stack. Users can create accounts, log in, upload their own videos, interact with public videos by commenting and reacting, manage their profiles, and administrators have access to an admin panel for content management.',
             imageSrc: 'images/project1.jpg',
-            liveLink: '#',
+            liveLink: 'https://video-stream-frontend-steel.vercel.app/',
             repoLink: 'https://github.com/codewithshreesant/Video-Stream',
         },
         {
